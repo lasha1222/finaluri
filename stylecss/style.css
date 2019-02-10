@@ -1,0 +1,236 @@
+body {
+  background-image: url(../images/back.png);
+  font-family: 'Work Sans', sans-serif;
+}
+ul {
+  width: 100%;
+}
+.orange {
+	background-color: orange;
+}
+.nav-link {
+	font-size: 20px;
+	color: black;
+}
+.nav-item .nav-link {
+	font-size: 20px;
+	color: black;
+}
+.nav-item a {
+	display: inline-block;
+}
+.container-fluid {
+	/*padding: 0px;*/
+}
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+.nav-item {
+  text-align: center;
+	left: 10px;
+}
+.dropbtn {
+  font-size: 20px;
+  margin-top: -7px; 
+}
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+@media only screen and (max-width: 1400px){
+  .nav-item {
+		padding: -35px;
+		margin-left: -25px;
+	}
+	.nav-item .nav-link {
+		font-size: 11px;
+	}
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
+body {
+  font-family: 'Roboto', sans-serif;
+}
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+body { margin: 0; } 
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left; }
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 25s slidy infinite; 
+}
+#slider {
+  margin-top: 30px;
+}
+img {
+  max-width: 100%;
+    height: auto
+}
+article {
+  background-color: #ffffff;
+  width: 100%;
+  height: 1000px;
+}
+.box2 {
+  display: inline-block;
+  /*width: 33%;*/
+  background-color: black;
+  overflow: hidden;
+  position: relative;
+}
+.box2:hover img {
+  transform: translate(50px, 0px);
+}
+.transition {
+   position: relative;
+  animation-name: example;
+  animation-duration: 6s;
+  animation-delay: -3s;
+}
+@keyframes example {
+  0%    {left:0px; top:0px;}
+  25%  {left:2100px; top:0px;}
+  50%  { left:2100px; top:200px;}
+  75%  {left:0px; top:200px;}
+  100%  {left:0px; top:0px;}
+}
+.box2 img {
+  width: 150%;
+  transition: transform .3s;
+  display: block;
+  margin-left: -20px;
+}
+h6 {
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+  bottom: 0px;
+  right: -500px;
+  margin: 0px;
+  padding-top: 30px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  text-align: center;
+  transition: right .7s;
+  box-sizing: border-box;
+}
+h5 {
+  font-size: 30px;
+  position: absolute;
+  bottom: 10px;
+  left: -200px;
+  opacity: 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  transition: left .4s ease-in, opacity .9s, transform .9s;
+}
+.box2:hover h6 {
+  right: 0px;
+}
+.box2:hover h5 {
+  left: 0px;
+  opacity: 1;
+  transform: rotate(360deg);
+}
+.boxes {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+}
+.bg1 img {
+  margin-left: 4px;
+  width: 49.5%;
+}
+@media only screen and (max-width: 1400px){
+  .bg1 img {
+    width: 49%;
+  }
+}
+@media only screen and (max-width: 800px){
+  .bg1 img {
+    width: 100%;
+  }
+}
+.boxes2 p {
+  display: inline-block;
+  font-size: 20px;
+  color: black;
+}
+.read-more {
+  width: 95px; 
+  height: 25px; font-size: 20px; 
+  background-color: orange;
+  color: #ffffff;
+}
+.card {
+  margin-right: 35px;
+  margin-left: 35px;
+}
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  margin-top: 20px;
+}
+.footer1 {
+  color: #ffffff;
+  font-size: 20px;
+}
+.footer2 {
+  color: #ffffff;
+  float: right;
+  font-size: 20px;
+}
+.names {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+.color {
+  color: #ffffff;
+}
+.player {
+  margin-bottom: 50px;
+}
+.tr {
+  background-color: white;
+  color: black;
+}
+.navbar {
+  text-transform: uppercase;
+  font-weight: bold;
+}
